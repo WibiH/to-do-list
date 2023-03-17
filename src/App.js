@@ -10,8 +10,8 @@ function App() {
   const [input, setInput] = useState("");
 
   const handleAddTask = () => {
-    setTasks([...tasks]);
-    console.log(setTasks([...tasks]));
+    setTasks([...tasks, input]);
+    setInput("");
   };
 
   return (
@@ -27,9 +27,10 @@ function App() {
       <div>
         {tasks.map((task) => {
           return (
-            <input type={"checkbox"} key={task}>
-              {task}
-            </input>
+            <div key={task}>
+              <input type={"checkbox"} />
+              <label>{task}</label>
+            </div>
           );
         })}
       </div>
