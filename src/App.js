@@ -14,6 +14,8 @@ function App() {
     setInput("");
   };
 
+  const handleToggleTask = () => {};
+
   return (
     <div>
       <h1>Todo List</h1>
@@ -28,7 +30,7 @@ function App() {
         {tasks.map((task) => {
           return (
             <div key={task}>
-              <input type={"checkbox"} />
+              <input type={"checkbox"} onClick={handleToggleTask} />
               <label>{task}</label>
             </div>
           );
