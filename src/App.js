@@ -1,3 +1,4 @@
+import "./App.css";
 import React, { useState } from "react";
 
 /* 
@@ -20,16 +21,15 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Todo List</h1>
-      <label>New Task</label>
+    <div className="App">
+      <h1>All I want ToDo is this ToDo List...</h1>
       <input
         type="text"
         value={input}
         onInput={(event) => setInput(event.target.value)}
       />
       <button onClick={handleAddTask}>Add</button>
-      <div>
+      <div id="taskList">
         {tasks.map((task) => {
           return (
             <div key={task}>
