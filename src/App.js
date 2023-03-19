@@ -15,7 +15,7 @@ function App() {
     setInput("");
   };
 
-  const handleToggleTask = () => {
+  const toggleTask = () => {
     setChecked(true);
   };
 
@@ -33,7 +33,7 @@ function App() {
         {tasks.map((task) => {
           return (
             <div key={task}>
-              <input type={"checkbox"} onClick={handleToggleTask} />
+              <input type={"checkbox"} onClick={toggleTask} />
               {(checked && (
                 <s>
                   <label>{task}</label>
