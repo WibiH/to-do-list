@@ -8,13 +8,16 @@ put new task in list of tasks
 function App() {
   const [tasks, setTasks] = useState([]);
   const [input, setInput] = useState("");
+  const [checked, setChecked] = useState(false);
 
   const handleAddTask = () => {
     setTasks([...tasks, input]);
     setInput("");
   };
 
-  const handleToggleTask = () => {};
+  const handleToggleTask = () => {
+    setChecked(true);
+  };
 
   return (
     <div>
@@ -31,7 +34,11 @@ function App() {
           return (
             <div key={task}>
               <input type={"checkbox"} onClick={handleToggleTask} />
-              <label>{task}</label>
+              {(checked && (
+                <s>
+                  <label>{task}</label>
+                </s>
+              )) || <label>{task}</label>}
             </div>
           );
         })}
