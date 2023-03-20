@@ -34,7 +34,11 @@ function App() {
         {tasks.map((task) => {
           return (
             <div key={task}>
-              <input type={"checkbox"} onClick={toggleTask} />
+              <input
+                className="form-control"
+                type={"checkbox"}
+                onClick={toggleTask}
+              />
               {(checked && (
                 <span id="striked">
                   <label>{task}</label>
