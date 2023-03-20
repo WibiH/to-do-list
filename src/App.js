@@ -18,6 +18,7 @@ function App() {
 
   const toggleTask = () => {
     setChecked(true);
+    console.log(checked);
   };
 
   return (
@@ -35,9 +36,9 @@ function App() {
             <div key={task}>
               <input type={"checkbox"} onClick={toggleTask} />
               {(checked && (
-                <s>
+                <span id="striked">
                   <label>{task}</label>
-                </s>
+                </span>
               )) || <label>{task}</label>}
             </div>
           );
