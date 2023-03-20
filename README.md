@@ -1,7 +1,5 @@
 # To Do List
 
-## Requirements
-
-- add todo task
-- store tasks
-- mark the box in the task as done
+![toDoList](/public/toDoList.png)
+Simple to do list react training.
+Add todo tasks, store tasks, mark tasks when done...
