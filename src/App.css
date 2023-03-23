@@ -42,18 +42,38 @@ button {
   padding: 1px 2px;
 }
 
+.list-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #taskList {
   text-align: left;
-  margin-left: 40%;
 }
 
 #taskList ~ label {
+  text-align: left;
+}
+
+ul {
+  padding-inline-start: 0;
+  list-style: none;
+  width: 20%;
+  text-align: left;
+  line-height: 1.5em;
+  inline-size: 30%;
+  overflow-wrap: break-word;
+}
+
+li ~ label {
   padding: 30px;
   text-align: left;
 }
 
 #taskList input:checked ~ #striked {
   text-decoration: line-through;
-  text-decoration-thickness: 0.3rem;
+  text-decoration-thickness: 0.2rem;
   text-decoration-color: #444cf7;
 }
