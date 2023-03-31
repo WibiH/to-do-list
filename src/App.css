@@ -6,7 +6,8 @@ input {
 }
 
 h1 {
-  line-height: 1.5em;
+  line-height: 1.8em;
+  font-size: 2em;
 }
 
 input {
@@ -75,5 +76,5 @@ li ~ label {
 #taskList input:checked ~ #striked {
   text-decoration: line-through;
   text-decoration-thickness: 0.2rem;
-  text-decoration-color: #444cf7;
+  text-decoration-color: #ff5050;
 }

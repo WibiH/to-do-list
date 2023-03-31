@@ -17,7 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>All I want ToDo is this ToDo List...</h1>
+      <h1>
+        All I want ToDo <br />
+        is this ToDo List...
+      </h1>
       <div className="list-box">
         <div>
           <input

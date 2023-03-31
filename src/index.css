@@ -6,10 +6,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e5e5f7;
-  background-image: linear-gradient(#444cf7 1px, transparent 1px),
-    linear-gradient(to right, #444cf7 1px, #e5e5f7 1px);
-  background-size: 20px 20px;
+  background: linear-gradient(
+    0deg,
+    transparent 45%,
+    #6e9262 45%,
+    #6e9262 55%,
+    transparent 55%,
+    transparent 20%,
+    #6e9262 20%,
+    #6e9262 30%,
+    transparent 30%
+  );
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  opacity: 1;
 }
 
 code {
