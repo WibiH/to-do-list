@@ -6,41 +6,41 @@ input {
 }
 
 h1 {
-  line-height: 1.8em;
-  font-size: 2em;
+  line-height: 1.8rem;
+  font-size: 2rem;
 }
 
 input {
-  border: 3px solid black;
-  height: 20px;
-  margin: 5px;
+  border: 1875rem solid black;
+  height: 1.25rem;
+  margin: 0.3125rem;
 }
 
 input[type="checkbox"] {
   appearance: none;
-  margin: 10px 10px 0 0;
-  height: 20px;
-  width: 20px;
-  border: 3px solid black;
+  margin: 0.625rem 0.625rem 0 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 0.1875rem solid black;
   background-color: white;
 }
 
 input[type="checkbox"]:checked {
   appearance: none;
-  margin: 10px 10px 0 0;
-  height: 20px;
-  width: 20px;
-  border: 3px solid black;
+  margin: 0.625rem 0.625rem 0 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 0.1875rem solid black;
   background-color: black;
 }
 
 button {
   background-color: black;
   color: white;
-  border: 3px solid black;
-  height: 28px;
-  margin: 5px;
-  padding: 1px 2px;
+  border: 0.1875rem solid black;
+  height: 1.75rem;
+  margin: 0.3125rem;
+  padding: 0.0625rem 0.125rem;
 }
 
 .list-box {
@@ -63,13 +63,13 @@ ul {
   list-style: none;
   width: 20%;
   text-align: left;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   inline-size: 30%;
   overflow-wrap: break-word;
 }
 
 li ~ label {
-  padding: 30px;
+  padding: 1.875rem;
   text-align: left;
 }
 
